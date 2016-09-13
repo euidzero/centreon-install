@@ -15,7 +15,7 @@
 #TODO
 #use a do_critical wrapper
 _usage () {
-  echo "$0 -[f|b]
+  echo "$0 -[f|s]
    -f : full centreon installation
    -s : satellite only installation"
 }

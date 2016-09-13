@@ -1,17 +1,25 @@
 centreon-install
 ================
 
-Centreon autoinstall for Debian (with centreon-engine)
+Centreon autoinstall for Debian/Ubuntu (with centreon-engine).
 
-Tested on Debian Wheezy
+Full install or poller (engine+broker only).
+
+Uses nagios plugins from the distro (to ease security upgrades).
+
+Tested on Debian Wheezy (7.x), Ubuntu 14.04.
+
+Won't work on Debian >=8 and Ubuntu >=14.04 because the php version
+required for centreon is no more available.
+
 
 == Versions
 - CLIB_VER="1.4.2"
 - CONNECTOR_VER="1.1.2"
 - ENGINE_VER="1.5.0"
 - PLUGIN_VER="2.1.1"
-- BROKER_VER="2.11.0"
-- CENTREON_VER="2.7.0"
+- BROKER_VER="2.11.4"
+- CENTREON_VER="2.7.4"
 - CLAPI_VER="1.8.0"
 - MARIADB_VER="10.1"
 - WIDGET_HOST_VER="1.3.2"
@@ -39,7 +47,8 @@ Tested on Debian Wheezy
 Change your vars at the beginning of the script
 
 ----
-sudo ./centreon.sh
+sudo ./centreon-install.sh -[f|s] 
+      
 ----
 
 http://localhost/centreon/
