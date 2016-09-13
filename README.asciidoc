@@ -7,13 +7,13 @@ Tested on Debian Wheezy
 
 == Versions
 - CLIB_VER="1.4.2"
-- CONNECTOR_VER="1.1.1"
-- ENGINE_VER="1.4.11"
-- PLUGIN_VER="2.0.3"
-- BROKER_VER="2.8.1"
-- CENTREON_VER="2.5.4"
-- CLAPI_VER="1.7.1"
-- MARIADB_VER="10.0"
+- CONNECTOR_VER="1.1.2"
+- ENGINE_VER="1.5.0"
+- PLUGIN_VER="2.1.1"
+- BROKER_VER="2.11.0"
+- CENTREON_VER="2.7.0"
+- CLAPI_VER="1.8.0"
+- MARIADB_VER="10.1"
 - WIDGET_HOST_VER="1.3.2"
 - WIDGET_HOSTGROUP_VER="1.1.1"
 - WIDGET_SERVICE_VER="1.3.2"
@@ -60,7 +60,7 @@ http://localhost/centreon/
 
 |===
 |Broker Module                        | centreon-broker
-|Centreon Broker etc directory        | /usr/local/centreon-broker/etc
+|Centreon Broker etc directory        | /etc/centreon-broker
 |Centreon Broker module (cbmod.so)    | /usr/local/centreon-broker/lib/cbmod.so
 |Centreon Broker log directory        | /var/log/centreon-broker/
 |Retention file directory             | /var/lib/centreon-broker
