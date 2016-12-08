@@ -573,6 +573,12 @@ chmod 775 /var/lib/centreon-broker/
 ## drwxr-xr-x 3 root root 15 Feb  4 20:31 centreon-engine
 chown ${ENGINE_USER}:${ENGINE_GROUP} /var/lib/centreon-engine/
 
+#missing executable bits
+chmod 0755 /usr/local/centreon/cron/centstorage_purge
+chmod 0755 /usr/local/centreon/cron/nightly_tasks_manager
+
+
+
 }
 
 ##ADDONS
